@@ -27,15 +27,99 @@
 }
 
 .contact {
-    display: flex;
-    justify-content: space-between
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding-left: 0;
 }
 
 .contact-item {
-    width: 368px;
-    height: 538px;
     background: #fff;
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 24px;
     list-style: none;
+    padding: 40px 32px;
+    margin-bottom: 20px;
+}
+
+.contact-name {
+    width: 80px;
+    height: 16px;
+    background: #F0D1A5;
+    border-radius: 6px; 
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    justify-content: center;
+
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+    
+.contact-name-food {
+    width: 130px;
+    height: 16px;
+    background: #C2E297;
+    border-radius: 6px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    justify-content: center;
+}
+
+.contact-text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+
+    color: #000000;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.contact-text-date {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+
+    color: #000000;
+
+    margin: 0 auto;
+}
+
+.contact-description {
+    color: #907E82;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.contact-time {
+    color: #FFA5BA;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.contact-link {
+    display: block;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #907E82;
 }
