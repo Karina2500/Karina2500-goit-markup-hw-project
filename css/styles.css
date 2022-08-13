@@ -18,7 +18,8 @@
     margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: blueviolet;
+    background: linear-gradient(rgba(255, 245, 246, 1),
+    rgba(255, 165, 186, 0.46));
 }
 .container {
     padding-left: 15px;
@@ -27,19 +28,27 @@
 }
 
 .contact {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 auto;
-        padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-left: 0;
 }
 
 .contact-item {
+    width: 280px;
+    height: 412px;
     background: #fff;
-    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 24px;
     list-style: none;
     padding: 40px 32px;
     margin-bottom: 20px;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-item:hover,
+.contact-item:focus {
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
 }
 
 .contact-name {
@@ -53,6 +62,7 @@
     font-weight: 500;
     font-size: 12px;
     text-align: center;
+    align-items: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     justify-content: center;
@@ -72,16 +82,28 @@
     font-weight: 500;
     font-size: 12px;
     text-align: center;
+    align-items: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     justify-content: center;
+
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.contact-line {
+    width: 216px;
+    height: 0;
+    margin-top: 0;
+    margin-bottom: 24px;
+    margin-top: 24px;
 }
 
 .contact-text {
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
     letter-spacing: 0.04em;
 
     color: #000000;
@@ -94,26 +116,41 @@
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
     letter-spacing: 0.04em;
 
     color: #000000;
-
-    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 
 .contact-description {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
     color: #907E82;
-
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0 auto;
 }
 
 .contact-time {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
     color: #FFA5BA;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
+
+.contact-time-san {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFA5BA;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 
 .contact-link {
     display: block;
@@ -121,5 +158,57 @@
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
+    line-height: 1.5;
     color: #907E82;
+    text-decoration-line: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: #D41443;
+}
+
+.contact-button-location {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
+
+    background: #D41342;
+    border-radius: 22px;
+    border: none;
+    height: 44px;
+    width: 162px;
+}
+
+.contact-button-franchise {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #D41443;
+    border-radius: 22px;
+    border: none;
+    height: 44px;
+    width: 162px;
+}
+
+.contact-img {
+    fill: currentColor;
+    width: 12px;
+    height: 12px;
 }
