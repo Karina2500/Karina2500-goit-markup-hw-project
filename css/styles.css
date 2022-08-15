@@ -176,38 +176,48 @@
     }
   }
   .schedule__time {
-    @include font(500, 12px, 1.83, null);
-    color: var(--second-accent-color);
-    @include tablet {
-      @include font(null, 14px, 1.86, null);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.84;
+    letter-spacing: 0.04em;
+    color: #FFA5BA;
+
+    @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
     }
-    @include desktop {
-      @include font(null, 16px, 1.88, null);
+    @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.88;
     }
   }
   .time-work {
     margin-bottom: 8px;
-    @include tablet {
+    @media screen and (min-width: 768px) {
       margin-bottom: 12px;
     }
-    @include desktop {
+    @media screen and (min-width: 1200px) {
       margin-bottom: 12px;
     }
   }
   
   .contacts-link__link {
-    @include font(500, 12px, 1.5, null);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     color: inherit;
-    @include tablet {
-      @include font(null, 14px, 1.85, null);
+
+    @media screen and (min-width: 768px) {
+    font-size: 14px;
     }
-    @include desktop {
-      @include font(null, 16px, 1.82, null);
+    @media screen and (min-width: 1200px) {
+    font-size: 16px;
     }
   }
   .contacts-link__link:focus,
   .contacts-link__link:hover {
-    color: var(--accent-color);
+    color: #D41342;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .contact-btn {
@@ -215,11 +225,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @include tablet {
+
+    @media screen and (min-width: 768px) {
       display: flex;
       flex-direction: row;
     }
-    @include desktop {
+    @media screen and (min-width: 1200px) {
       display: flex;
       flex-direction: row;
     }
@@ -230,39 +241,46 @@
     height: 44px;
     padding-top: 10px;
     padding-bottom: 10px;
-    @include font(700, 16px, 1.32, null);
-    color: var(--white-background-color);
-    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.32;
+    /* color: var(--white-background-color);
+    background-color: var(--accent-color); */
     border-style: none;
     border-radius: 22px;
     margin-bottom: 10px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus {
       background-color: #ecebeb;
-      color: var(--accent-color);
+      /* color: var(--accent-color); */
     }
-    @include tablet {
+
+    @media screen and (min-width: 768px) {
       width: 192px;
       margin-bottom: 0;
       margin-right: 15px;
     }
-    @include desktop {
+    @media screen and (min-width: 1200px) {
       width: 198px;
       margin-right: 12px;
     }
   }
+
   .contacts-btn_franchise {
     cursor: pointer;
     width: 162px;
     height: 44px;
     padding-top: 10px;
     padding-bottom: 10px;
-    @include font(700, 16px, 1.32, null);
-    color: var(--accent-color);
-    background-color: var(--white-background-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.32;
+    /* color: var(--accent-color);
+    background-color: var(--white-background-color); */
     border-style: none;
     border-radius: 22px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -270,10 +288,10 @@
     &:focus {
       background-color: #ecebeb;
     }
-    @include tablet {
+    @media screen and (min-width: 768px) {
       width: 174px;
     }
-    @include desktop {
+    @media screen and (min-width: 1200px) {
       width: 168px;
     }
   }
